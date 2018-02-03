@@ -1,0 +1,24 @@
+{
+	"name": "linkorb/disy-client",
+  "description": "Fetches data through an endpoint-broker",
+  "homepage": "https://github.com/linkorb/disy-client",
+  "keywords": ["disy", "rabbitmq", "linkorb"],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Joost Faassen",
+      "email": "j.faassen@linkorb.com",
+      "role": "Development"
+    }
+  ],
+  "require": {
+    "symfony/console": "~2.7",
+    "php-amqplib/php-amqplib": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "DiSy\\Client\\": "src/"
+    }
+  },
+  "license": "MIT"
+}
