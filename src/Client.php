@@ -117,6 +117,24 @@ class Client
     }
 
 
+    public function getFile($filename)
+    {
+        $requestId = rand(10000000, 99999999);
+
+        // Send query
+        $data = [
+            'type' => 'getFile',
+            'requestId' => $requestId,
+            'createdAt' => date('Y-m-d H:i:s'),
+            'filename' => $filename
+        ];
+
+        $this->publish($data);
+
+        return $this->getResponse($requestId);
+    }
+
+
     public function disconnect()
     {
         $this->channel->close();
