@@ -12,7 +12,6 @@
     }
   ],
   "require": {
-    "symfony/console": "~2.7",
     "php-amqplib/php-amqplib": "~2.0"
   },
   "autoload": {
